@@ -4,10 +4,13 @@ RM              =   rm -f
 
 default: all 
 
-all: ex
+all: ex ex2
 
 ex: ex.c
 	$(CC) $(CFLAGS) -o ex ex.c
 
+ex2: ex2.c
+	$(CC) $(CFLAGS) -o ex2 ex2.c
+
 clean veryclean:
-	$(RM) ex
+	$(RM) ex ex2
